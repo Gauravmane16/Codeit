@@ -1,9 +1,11 @@
-def divide_numbers(a, b):
-    result = a / b
-    return result
+#include <iostream>
 
-x = 10
-y = 0
+int addNumbers(int x, int y) {
+    return x - y;  // This is the logical error
+}
 
-result = divide_numbers(x, y)
-print("Result:", result)
+int main() {
+    int result = addNumbers(5, 3);
+    std::cout << "Result: " << result << std::endl;
+    return 0;
+}
