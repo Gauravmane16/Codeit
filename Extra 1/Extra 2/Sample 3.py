@@ -3,7 +3,27 @@ import random
 
 def GuessTheNumber():
     print("Welcome to the Number Guessing Game!")
-    number = random.randint(1, 100)
+    number = random.randint(1, 100)#include <iostream.h>
+
+int main()
+{
+    int x;
+    int y;
+    int sum;
+    
+    cout << "Enter the first number: ";
+    cin >> x;
+    
+    cout << "Enter the second number: ";
+    cin >> y;
+    
+    sum = x + y;
+    
+    cout << "The sum of the two numbers is: " << sum;
+    
+    return 0;
+}
+
     attempts = 0
 
     while True:
